@@ -34,7 +34,7 @@ export default function Hero() {
             className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs font-semibold text-brand-700 shadow-soft"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-brand-500 animate-pulse" />
-            Trusted Health Partner in Gurugram
+            Aapki sehat, hamari zimmedari!
           </motion.span>
 
           <motion.h1
@@ -153,7 +153,7 @@ export default function Hero() {
             <span className="w-9 h-9 rounded-full bg-accent-100 text-accent-700 flex items-center justify-center"><Truck size={17} /></span>
             <div className="text-left">
               <p className="text-sm font-semibold text-ink-950">30 Min Delivery*</p>
-              <p className="text-xs text-slate-500">Across Gurugram</p>
+              <p className="text-xs text-slate-500">Across Nearby Areas</p>
             </div>
           </motion.div>
         </motion.div>

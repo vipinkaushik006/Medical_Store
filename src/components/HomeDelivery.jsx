@@ -3,7 +3,7 @@ import { Clock3, MapPinned, ShieldCheck, Wallet } from "lucide-react";
 
 const FEATURES = [
   { icon: Clock3, title: "45–90 Minute Delivery", desc: "Most orders reach you within the hour, depending on stock and location." },
-  { icon: MapPinned, title: "All of Gurugram Covered", desc: "From Faridpur Stand to Sohna Road, we deliver across the city." },
+  { icon: MapPinned, title: "All Nearby Areas Covered", desc: "From Faridpur Stand to Sohna Road, we deliver across the city." },
   { icon: Wallet, title: "Cash or Online Payment", desc: "Pay however suits you — cash on delivery or UPI, your choice." },
   { icon: ShieldCheck, title: "Sealed & Verified Packaging", desc: "Every order leaves our store sealed, checked and ready for use." },
 ];
