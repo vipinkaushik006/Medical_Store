@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.yourdomain.com/sitemap.xml
+Host: https://vashisth-medical-store.vercel.app
+Sitemap: https://vashisth-medical-store.vercel.app/sitemap.xml
