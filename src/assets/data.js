@@ -2,7 +2,7 @@
 
 export const BUSINESS = {
   name: "Vashisth Health Care & Medical Store",
-  shortName: "Vashisth Health Care",
+  shortName: "Vashisth Health Care ",
   tagline: "Complete Health Care Solutions at Your Doorstep.",
   doctorName: "DRx Dheeraj Vashisth",
   phone: "9588131892",
@@ -29,7 +29,7 @@ export const SERVICES = [
 
 export const STATS = [
   { value: 5000, suffix: "+", label: "Happy Customers" },
-  { value: 3, suffix: "+", label: "Years Experience" },
+  { value: 7, suffix: "+", label: "Years Experience" },
   { value: 24, suffix: "x7", label: "Support" },
   { value: 100, suffix: "%", label: "Genuine Medicines" },
 ];

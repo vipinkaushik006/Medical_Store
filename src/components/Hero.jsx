@@ -53,6 +53,15 @@ export default function Hero() {
             From genuine medicines to at-home nursing care — Vashisth Health Care & Medical Store keeps your family healthy, without the wait.
           </motion.p>
 
+          <motion.div
+            variants={fadeUp} initial="hidden" animate="show" custom={2.5}
+            className="mt-5 rounded-xl bg-brand-50 border border-brand-200 px-5 py-3.5 max-w-lg"
+          >
+            <p className="text-[15px] font-medium text-brand-800 leading-relaxed">
+              हमारे यहां पर खांसी, जुकाम, बुखार, उल्टी, दस्त, पेट दर्द, पेट में जलन, पेशाब में जलन, सिर दर्द, बदन दर्द व एलर्जी आदि सभी बिमारियों की दवा दी जाती है। खून की जांच भी की जाती है।
+            </p>
+          </motion.div>
+
           <motion.ul
             variants={fadeUp} initial="hidden" animate="show" custom={3}
             className="mt-8 grid grid-cols-2 gap-3 max-w-md"
