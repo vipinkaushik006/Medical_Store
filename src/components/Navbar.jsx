@@ -27,8 +27,8 @@ export default function Navbar() {
             <Cross size={20} className="text-white" strokeWidth={2.5} />
           </span>
           <span className="leading-tight">
-            <span className="block font-semibold text-ink-950 text-[15px]">Vashisth Health Care </span>
-            <span className="block text-[15px] tracking-wide text-slate-500 -mt-0.5">& Medical Store</span>
+            <span className="block font-semibold text-ink-950 text-[15px]">Vashisth Medical Store </span>
+            <span className="block text-[15px] tracking-wide text-slate-500 -mt-0.5">& Health Care</span>
           </span>
         </a>
 

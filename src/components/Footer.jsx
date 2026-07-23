@@ -22,10 +22,10 @@ export default function Footer() {
               </span>
               <span className="leading-tight">
                 <span className="block font-semibold text-white text-[15px]">
-                  Vashisth
+                  Vashisth Medical Store
                 </span>
                 <span className="block text-[11px] tracking-wide text-slate-400 -mt-0.5">
-                  HEALTH CARE
+                  & HEALTH CARE
                 </span>
               </span>
             </a>
@@ -112,7 +112,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p>
-            © {new Date().getFullYear()} Vashisth Medical Store. All rights
+            © {new Date().getFullYear()} Vashisth Medical Store & Health Care. All rights
             reserved.
           </p>
           <p>Faridpur Stand, Gurugram, Haryana</p>

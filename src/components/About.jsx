@@ -19,7 +19,7 @@ export default function About() {
             A Health Care Partner Your Neighborhood Trusts
           </h2>
           <p className="mt-6 text-slate-600 text-lg leading-relaxed">
-            For over a year, Vashisth Health Care & Medical Store has served the families of
+            For over a year, Vashisth Medical Store & Health Care has served the families of
             Faridpur Stand with genuine medicines, honest advice, and
             care that goes beyond the counter. What started as a neighbourhood medical store
             has grown into a complete health care partner — offering home delivery and everyday wellness checks for over 50 families.
@@ -65,7 +65,7 @@ export default function About() {
                 "Our mission is simple — bring trustworthy, complete health care to every
                 doorstep in Gurugram, one family at a time."
               </p>
-              <p className="mt-3 text-sm font-semibold text-ink-950">— The Vashisth Medical Store</p>
+              <p className="mt-3 text-sm font-semibold text-ink-950">— The Vashisth Medical Store & Health Care</p>
             </div>
           </div>
         </motion.div>
