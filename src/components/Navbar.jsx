@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, FileUp, Cross } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
@@ -22,7 +23,7 @@ export default function Navbar() {
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8 h-18 py-3 flex items-center justify-between">
-        <a href="#home" className="flex items-center gap-2.5 shrink-0">
+        <Link to="/" className="flex items-center gap-2.5 shrink-0">
           <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center shadow-soft">
             <Cross size={20} className="text-white" strokeWidth={2.5} />
           </span>
@@ -30,7 +31,7 @@ export default function Navbar() {
             <span className="block font-semibold text-ink-950 text-[15px]">Vashisth Medical Store </span>
             <span className="block text-[15px] tracking-wide text-slate-500 -mt-0.5">& Health Care</span>
           </span>
-        </a>
+        </Link>
 
         <ul className="hidden lg:flex items-center gap-9">
           {NAV_LINKS.map((link) => (

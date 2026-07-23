@@ -1,37 +1,18 @@
-import AnnouncementBar from "./components/AnnouncementBar";
-import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Stats from "./components/Stats";
-import Services from "./components/Services";
-import About from "./components/About";
-import WhyChooseUs from "./components/WhyChooseUs";
-import UploadPrescription from "./components/UploadPrescription";
-import HomeDelivery from "./components/HomeDelivery";
-import Testimonials from "./components/Testimonials";
-import FAQ from "./components/FAQ";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import FloatingButtons from "./components/FloatingButtons";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsConditions from "./pages/TermsConditions";
+import RefundPolicy from "./pages/RefundPolicy";
+import Disclaimer from "./pages/Disclaimer";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-surface-50 text-ink-950">
-      <AnnouncementBar />
-      <Navbar />
-      <main>
-        <Hero />
-        <Stats />
-        <Services />
-        <About />
-        <WhyChooseUs />
-        <UploadPrescription />
-        <HomeDelivery />
-        <Testimonials />
-        <FAQ />
-        <Contact />
-      </main>
-      <Footer />
-      <FloatingButtons />
-    </div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+      <Route path="/terms-and-conditions" element={<TermsConditions />} />
+      <Route path="/refund-policy" element={<RefundPolicy />} />
+      <Route path="/disclaimer" element={<Disclaimer />} />
+    </Routes>
   );
 }

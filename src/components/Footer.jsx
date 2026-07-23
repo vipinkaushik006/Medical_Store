@@ -5,7 +5,14 @@ import {
   FaInstagram,
   FaTwitter,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { BUSINESS, NAV_LINKS, SERVICES } from "../assets/data";
+const LEGAL_LINKS = [
+  { label: "Privacy Policy", href: "/privacy-policy" },
+  { label: "Terms & Conditions", href: "/terms-and-conditions" },
+  { label: "Refund Policy", href: "/refund-policy" },
+  { label: "Disclaimer", href: "/disclaimer" },
+];
 
 export default function Footer() {
   return (
@@ -16,7 +23,7 @@ export default function Footer() {
       <div className="relative max-w-7xl mx-auto px-6 lg:px-8 pt-20 pb-10">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12">
           <div>
-            <a href="#home" className="flex items-center gap-2.5">
+           <Link to="/" className="flex items-center gap-2.5">
               <span className="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-600 to-accent-600 flex items-center justify-center">
                 <Cross size={20} className="text-white" strokeWidth={2.5} />
               </span>
@@ -28,7 +35,7 @@ export default function Footer() {
                   & HEALTH CARE
                 </span>
               </span>
-            </a>
+            </Link>
             <p className="mt-5 text-sm leading-relaxed text-slate-400 max-w-xs">
               {BUSINESS.tagline}
             </p>
@@ -110,12 +117,22 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-16 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>
-            © {new Date().getFullYear()} Vashisth Medical Store & Health Care. All rights
-            reserved.
-          </p>
-          <p>Faridpur Stand, Gurugram, Haryana</p>
+       <div className="mt-16 pt-8 border-t border-white/10 flex flex-col gap-4">
+          <div className="flex flex-wrap items-center justify-center sm:justify-start gap-x-6 gap-y-2">
+            {LEGAL_LINKS.map((link) => (
+              <Link
+                key={link.href}
+                to={link.href}
+                className="text-xs text-slate-400 hover:text-white transition-colors"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
+            <p>© {new Date().getFullYear()} Vashisth Health Care & Medical Store. All rights reserved.</p>
+            <p>Faridpur Stand, Gurugram, Haryana</p>
+          </div>
         </div>
       </div>
     </footer>
